@@ -45,7 +45,7 @@ def get_user_data():
     global num_adult
     global num_child
     num_adult = int(input("Number of adults: "))
-    num_child = int(input("Number of childern: "))
+    num_child = int(input("Number of children: "))
 
 def perform_calculations():
     global cost_adult, cost_child, ser_fee, sales_tax, total, subtotal
@@ -64,7 +64,7 @@ def display_results():
     print('* Your neighborhood BBQ house*')
     print(line)
     print('Adults             $ ' + format(cost_adult,moneyf))
-    print('Childern           $ ' + format(cost_child,moneyf))
+    print('Children           $ ' + format(cost_child,moneyf))
     print('Service Fee        $ ' + format(ser_fee,moneyf))
     print(line)
     print('Subtotal           $ ' + format(subtotal,moneyf))
