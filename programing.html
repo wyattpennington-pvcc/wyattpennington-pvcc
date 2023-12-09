@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Program Development</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      cursor: pointer;
+      color: blue;
+    }
+
+    li:hover {
+      text-decoration: underline;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add a click event listener to each list item for demonstration purposes
+      var listItems = document.querySelectorAll('li');
+
+      // Function to display a definition alert
+      function displayDefinition(term, definition) {
+        alert(term + ': ' + definition);
+      }
+
+      listItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+          var term = item.textContent.split('.')[1].trim(); // Extract the term from the list item
+          switch (term) {
+            case 'Problem Definition':
+              displayDefinition(term, 'The process of clearly understanding and defining the problem that the program aims to solve.');
+              break;
+            case 'Planning':
+              displayDefinition(term, 'Creating a roadmap for the development process, including timelines, resources, and tasks.');
+              break;
+            case 'Design':
+              displayDefinition(term, 'Planning the structure and components of the program before implementation.');
+              break;
+            case 'Implementation (Coding)':
+              displayDefinition(term, 'Writing the actual code for the program based on the design.');
+              break;
+            case 'Testing':
+              displayDefinition(term, 'Evaluating the program to identify and fix bugs or issues.');
+              break;
+            case 'Deployment':
+              displayDefinition(term, 'Releasing the program for use by end-users.');
+              break;
+            case 'Maintenance':
+              displayDefinition(term, 'Updating and improving the program to meet changing requirements and fix issues.');
+              break;
+            default:
+              // Handle unknown terms
+              alert('Definition not available for ' + term);
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <h2>7 Phases of Computer Program Development</h2>
+
+  <ul>
+    <li>1. Problem Definition</li>
+    <li>2. Planning</li>
+    <li>3. Design</li>
+    <li>4. Implementation (Coding)</li>
+    <li>5. Testing</li>
+    <li>6. Deployment</li>
+    <li>7. Maintenance</li>
+  </ul>
+
+  <h2>Programming Structures</h2>
+
+  <p><strong>1. Sequential Structure:</strong> Executes instructions in a top-to-bottom order.</p>
+  <p><strong>2. Conditional Structure:</strong> Executes instructions based on a condition (if-else statements).</p>
+  <p><strong>3. Looping Structure:</strong> Repeats a block of code until a certain condition is met (for, while, do-while loops).</p>
+  <p><strong>4. Function (Procedural) Structure:</strong> Organizes code into reusable functions or procedures.</p>
+  <p><strong>5. Object-Oriented Structure:</strong> Organizes code around objects and classes, promoting encapsulation and inheritance.</p>
+  <p><strong>6. Event-Driven Structure:</strong> Responds to user actions or system events, triggering specific functions or actions.</p>
+  <p><strong>7. Modular Structure:</strong> Divides the program into smaller, manageable modules or components.</p>
+
+  <h2>Ways to Test a Program</h2>
+
+  <p><strong>1. Unit Testing:</strong> Testing individual units or components of the program in isolation.</p>
+  <p><strong>2. Integration Testing:</strong> Testing the combination of units to ensure they work together as expected.</p>
+  <p><strong>3. System Testing:</strong> Testing the entire system to verify that it meets the specified requirements.</p>
+  <p><strong>4. Acceptance Testing:</strong> Ensuring the program meets the user's requirements and is ready for deployment.</p>
+  <p><strong>5. Regression Testing:</strong> Testing to ensure that new code changes do not adversely affect existing functionality.</p>
+  <p><strong>6. Performance Testing:</strong> Evaluating the program's speed, responsiveness, and stability under various conditions.</p>
+  <p><strong>7. Security Testing:</strong> Identifying and fixing vulnerabilities in the program to protect against security threats.</p>
+
+</body>
+</html>
